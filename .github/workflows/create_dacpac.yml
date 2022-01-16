@@ -73,7 +73,6 @@ jobs:
           # Path to DACPAC file. *.dacpac or a folder to deploy
           dacpac-package: 'downloadLocation/HybridSynapseDB.dacpac'
           # DACPAC option is selected, additional SqlPackage.exe arguments that will be applied.
-          arguments: '/p:IncludeCompositeObjects=true /p:BlockOnPossibleDataLoss=True'
           profile: downloadLocation/HybridSynapseDB.publish.xml  
           
           
