@@ -1,0 +1,79 @@
+# this action is to generate and send a dacpac to an Azure Synapse Analytics Database
+
+name: Dacpac build and deployment
+
+# Controls when the workflow will run
+on: 
+  push:
+    paths:
+      - EDW/HybridSynapse/** #Only trigger on this path
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "BuiildDacpac"
+  BuildDacpac:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: create dacpac
+        run: |
+          & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe' EDW/HybridSynapse/HybridSynapseDB.sln /p:Configuration=Release
+       # extract the dapac to be used by the next job
+      - uses: actions/upload-artifact@v2
+        with:
+          name: HybridSynapseDB.dacpac
+          path: EDW/HybridSynapse/bin/Release
+      - name: Upload Artifact profile    
+        uses: actions/upload-artifact@v2
+        with:
+          name: HybridSynapseDB.publish.xml
+          path: EDW/HybridSynapse                
+ # send the built dacpac to Azure Synapse         
+  DeployDacpac:
+    # Set the dependency for the BuildDacpac job
+    needs: BuildDacpac
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    
+       # Downloads Data artifact to dacpac folder
+      - name: Download SQLPool artifact
+        uses: actions/download-artifact@v2.0.9
+        with:
+          name: HybridSynapseDB.dacpac
+          path: downloadLocation
+        
+        # Download profile from Workflow Artifacts          
+      - name: Download profile
+        uses: actions/download-artifact@v2
+        with:
+          name: HybridSynapseDB.publish.xml
+          path: downloadLocation 
+          
+      # Deploys SQLPool dacpac
+      - name: Deploy SQLPool Dacpac
+        uses: Azure/sql-action@v1
+        with:
+          # Name of the SQL Server name
+          server-name: 'synapseuat81.sql.azuresynapse.net'
+          # The connection string, including authentication information, for the SQL Server database.
+          connection-string: 'Server=tcp:synapseuat81.sql.azuresynapse.net,1433;Initial Catalog=sqlpooluat81;Persist Security Info=False;User ID=sqladminuser;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+          # Path to DACPAC file. *.dacpac or a folder to deploy
+          dacpac-package: 'downloadLocation/HybridSynapseDB.dacpac'
+          # DACPAC option is selected, additional SqlPackage.exe arguments that will be applied.
+          arguments: '/p:IncludeCompositeObjects=true /p:BlockOnPossibleDataLoss=True'
+          profile: downloadLocation/HybridSynapseDB.publish.xml  
+          
+          
