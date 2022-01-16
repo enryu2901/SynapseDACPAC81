@@ -62,6 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="technical\Tables\person.sql" />
-    <Build Include="Security\technical.sql" />
+    <PreDeploy Include="Security\technical.sql" />
   </ItemGroup>
 </Project>
