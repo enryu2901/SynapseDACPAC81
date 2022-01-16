@@ -58,10 +58,8 @@
     <Folder Include="Properties" />
     <Folder Include="technical\" />
     <Folder Include="technical\Tables\" />
-    <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="technical\Tables\person.sql" />
-    <PreDeploy Include="Security\technical.sql" />
   </ItemGroup>
 </Project>
