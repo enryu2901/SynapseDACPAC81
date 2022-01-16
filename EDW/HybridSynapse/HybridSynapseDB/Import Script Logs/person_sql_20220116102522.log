@@ -1,0 +1,13 @@
+1/16/2022 2:25:22 PM	This log contains information about the import operation of the script 'person.sql' into project 'HybridSynapseDB' on computer 'CAW2103859' by user'alimheloe.
+1/16/2022 2:25:22 PM	Started importing file: C:\Users\alimheloe\OneDrive - Deloitte (O365D)\Desktop\person.sql 
+1/16/2022 2:25:22 PM	File name C:\Users\alimheloe\OneDrive - Deloitte (O365D)\Desktop\person.sql (size: 71)
+1/16/2022 2:25:22 PM	Parsing import script
+1/16/2022 2:25:22 PM	Total number of batches in script: 1
+1/16/2022 2:25:22 PM	Total number of statements in script: 1
+1/16/2022 2:25:22 PM	The script was successfully imported into the project.
+1/16/2022 2:25:22 PM	Analyzing schema objects...
+1/16/2022 2:25:22 PM	Scanning project for duplicate elements
+1/16/2022 2:25:22 PM	Element 'person' was merged into the existing script: 'C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\HybridSynapseDB\technical\Tables\person.sql'.
+1/16/2022 2:25:23 PM	Finished duplicate element processing
+1/16/2022 2:25:23 PM	A summary of the import was saved to the following location: C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\HybridSynapseDB\Import Script Logs\person_sql_20220116102522.log
+1/16/2022 2:25:23 PM	Click Finish to continue...
