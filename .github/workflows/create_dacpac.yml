@@ -69,7 +69,7 @@ jobs:
           # Name of the SQL Server name
           server-name: 'synapseuat81.sql.azuresynapse.net'
           # The connection string, including authentication information, for the SQL Server database.
-          connection-string: 'Server=tcp:synapseuat81.sql.azuresynapse.net,1433;Initial Catalog=sqlpooluat81;Persist Security Info=False;User ID=sqladminuser;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+          connection-string: 'Server=tcp:synapseuat81.sql.azuresynapse.net,1433;Initial Catalog=sqlpooluat81;Persist Security Info=False;User ID=sqladminuser;Password=P@ssw0rd123!@#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
           # Path to DACPAC file. *.dacpac or a folder to deploy
           dacpac-package: 'downloadLocation/HybridSynapseDB.dacpac'
           # DACPAC option is selected, additional SqlPackage.exe arguments that will be applied.
