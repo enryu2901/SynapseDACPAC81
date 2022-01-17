@@ -2,10 +2,11 @@
 <Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
   </Operation>
   <Operation Name="Rename Refactor" Key="b3a652fd-6dad-4e99-8133-2e3b574ff60d" ChangeDateTime="01/17/2022 00:26:58">
-    <Property Name="ElementName" Value="[technical].person.first_name" />
+    <Property Name="ElementName" Value="[technical].[person].name" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[technical].[person]" />
     <Property Name="ParentElementName" Value="technical.person" />
     <Property Name="ParentElementType" Value="SqlTable" />
-    <Property Name="NewName" Value="name" />
+    <Property Name="NewName" Value="first_name" />
   </Operation>
 </Operations>
