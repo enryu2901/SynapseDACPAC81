@@ -1,4 +1,8 @@
-﻿CREATE TABLE [technical].[person] (
+﻿CREATE SCHEMA [technical]
+
+GO
+
+CREATE TABLE [technical].[person] (
     [id]         INT           NULL,
     [name] VARCHAR (100) NULL
 )
