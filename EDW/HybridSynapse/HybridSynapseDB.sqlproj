@@ -24,6 +24,9 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <GenerateCreateScript>True</GenerateCreateScript>
     <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <CompatibilityMode>140</CompatibilityMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
