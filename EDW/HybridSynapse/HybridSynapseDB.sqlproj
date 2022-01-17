@@ -58,11 +58,13 @@
     <Folder Include="Properties" />
     <Folder Include="technical\" />
     <Folder Include="technical\Tables\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="technical\Tables\person.sql" />
+    <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="HybridSynapseDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="technical\Tables\person.sql" />
+    <Build Include="Security\technical.sql" />
   </ItemGroup>
 </Project>

@@ -4,7 +4,3 @@ C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\
 C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\bin\Debug\HybridSynapseDB.dacpac
 C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\bin\Debug\HybridSynapseDB.dll
 C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\bin\Debug\HybridSynapseDB.pdb
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\Model.xml
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\refactor.xml
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\postdeploy.sql
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\predeploy.sql
