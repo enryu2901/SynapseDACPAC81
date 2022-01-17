@@ -8,7 +8,7 @@
     <Property Name="NewName" Value="name" />
   </Operation>
   <Operation Name="Rename Refactor" Key="2b250415-b781-4587-83a6-2cf24890c87e" ChangeDateTime="01/17/2022 05:53:56">
-    <Property Name="ElementName" Value="[technical].[person].name" />
+    <Property Name="ElementName" Value="[technical].[person].[name]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[technical].[person]" />
     <Property Name="ParentElementType" Value="SqlTable" />
