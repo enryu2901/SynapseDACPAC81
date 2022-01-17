@@ -60,7 +60,7 @@
     <Folder Include="technical\Tables\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="technical\Tables\person.sql" />
+    <PostDeploy Include="technical\Tables\person.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="HybridSynapseDB.refactorlog" />
