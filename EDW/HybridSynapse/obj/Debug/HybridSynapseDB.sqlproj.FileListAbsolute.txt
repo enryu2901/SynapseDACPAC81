@@ -1,6 +1,0 @@
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\HybridSynapseDB.sqlproj.AssemblyReference.cache
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\HybridSynapseDB.dll
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\obj\Debug\HybridSynapseDB.pdb
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\bin\Debug\HybridSynapseDB.dacpac
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\bin\Debug\HybridSynapseDB.dll
-C:\Users\alimheloe\Source\Repos\enryu2901\SynapseDACPAC81\EDW\HybridSynapse\bin\Debug\HybridSynapseDB.pdb
