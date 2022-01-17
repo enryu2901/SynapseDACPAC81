@@ -66,4 +66,7 @@
     <Build Include="technical\Tables\person.sql" />
     <Build Include="Security\technical.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="HybridSynapseDB.refactorlog" />
+  </ItemGroup>
 </Project>
