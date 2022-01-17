@@ -72,7 +72,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[technical].[person].[first_name]">
+					<Element Type="SqlSimpleColumn" Name="[technical].[person].[name]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -111,7 +111,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[technical].[person].[first_name]" />
+								<References Name="[technical].[person].[name]" />
 							</Entry>
 						</Relationship>
 					</Element>

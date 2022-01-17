@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
-  <Operation Name="Rename Refactor" Key="72bb8a83-1594-4f80-8688-0b8ef04f1647" ChangeDateTime="01/16/2022 23:55:34">
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="72bb8a83-1594-4f80-8688-0b8ef04f1647" ChangeDateTime="01/16/2022 23:55:34" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[technical].[person].[first_name]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[technical].[person]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="name" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="c50bb47a-bc65-405b-b2d1-f8c62935251d" ChangeDateTime="01/17/2022 00:18:15">
+  <Operation Name="Rename Refactor" Key="c50bb47a-bc65-405b-b2d1-f8c62935251d" ChangeDateTime="01/17/2022 00:18:15" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[technical].[person].[first_name]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[technical].[person]" />
