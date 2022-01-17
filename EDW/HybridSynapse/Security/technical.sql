@@ -1,1 +1,3 @@
-﻿create schema technical
+﻿CREATE SCHEMA [technical]
+    AUTHORIZATION [dbo];
+

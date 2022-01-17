@@ -1,5 +1,6 @@
-﻿create table technical.person
-(
-	id int,
-	first_name varchar(100)
+﻿CREATE TABLE [technical].[person] (
+    [id]   INT           NULL,
+    [name] VARCHAR (100) NULL
 )
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = ROUND_ROBIN);
+
