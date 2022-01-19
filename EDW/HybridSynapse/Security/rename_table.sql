@@ -1,0 +1,1 @@
+﻿RENAME OBJECT technical.people TO person
