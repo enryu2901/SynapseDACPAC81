@@ -69,4 +69,7 @@
     <Build Include="Security\technical.sql" />
     <Build Include="technical\Tables\technical.person.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\rename_table.sql" />
+  </ItemGroup>
 </Project>
