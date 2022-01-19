@@ -1,8 +1,10 @@
-﻿CREATE TABLE [technical].[person] (
+﻿CREATE TABLE [technical].[people] (
     [id]   INT           NULL,
-    first_name VARCHAR (100) NULL
+    [name] VARCHAR (100) NULL
 )
 WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = ROUND_ROBIN);
+
+
 
 
 
